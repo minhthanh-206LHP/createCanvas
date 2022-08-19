@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <script>
+        var circles = []
+        var temp  = 0;
+        console.log(temp);
+        function setup() {
+            createCanvas(640,320);
+            console.log(temp + 1000);
+            for (var i = 0; i < 25; i++) {
+                var circle = {
+                    x : random(640),
+                    y: random(320),
+                    r: 30
+                };
+                circles.push(circle)
+            }
+
+            for (var i = 0; i < circles.length; i++){
+                fill(255,0,150,100);
+                ellipse(circles[i].x, circles[i].y, circles[i].r * 2, circles[i].r*2);
+            }
+        }
+
+        function draw() {
+
+        }
+    </script>
+</body>
+</html>
